@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #050508;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.caixa-principal {
+    width: 375px;
+    height: 812px;
+    padding: 25px 15px;
+    background-color: #0d0d18;
+    border: 3px solid #00f3ff;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0, 243, 255, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;
+    position: relative;
+}
+
+.caixa-principal::-webkit-scrollbar {
+    width: 0px;
+}
+
+.logo {
+    width: 130px;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.subtitulo {
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.botao {
+    display: block;
+    width: 100%;
+    padding: 14px 0;
+    margin: 10px 0;
+    background: linear-gradient(90deg, #0055ff, #00f3ff);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.botao-roxo {
+    background: linear-gradient(90deg, #7b00ff, #00f3ff);
+}
+
+.item-categoria {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    margin: 10px 0;
+    border: 1px solid #00f3ff;
+    border-radius: 25px;
+    background-color: #121224;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.botao-ver {
+    background: linear-gradient(90deg, #7b00ff, #00f3ff);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 6px 18px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.grade-produtos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.cartao-produto {
+    border: 1px solid #00f3ff;
+    border-radius: 12px;
+    padding: 10px 8px;
+    font-size: 11px;
+    background-color: #121224;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.foto-produto {
+    width: 100%;
+    height: 100px; 
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+
+.preco {
+    color: #00f3ff;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.botao-comprar {
+    display: block;
+    background: linear-gradient(90deg, #0055ff, #7b00ff);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 6px 2px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 10px;
+}
+
+.campo {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    background-color: #121224;
+    border: 1px solid #7b00ff;
+    border-radius: 15px;
+    color: #ffffff;
+    outline: none;
+    font-size: 13px;
+}
+
+.campo::placeholder {
+    color: #8888a0;
+}
+
+textarea.campo {
+    height: 80px;
+    resize: none;
+}
+
+.secao-resumo {
+    width: 100%;
+    border: 1px solid #7b00ff;
+    border-radius: 12px;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 13px;
+    text-align: left;
+    background-color: #121224;
+}
+
+.item-carrinho {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.foto-produto-resumo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: #0a0a14;
+    border: 1px solid #00f3ff;
+}
+
+.linha-valor {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+.total {
+    color: #00f3ff;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 10px;
+    border-top: 1px solid #333;
+    padding-top: 8px;
+}
+
+.icone-sucesso {
+    font-size: 40px;
+    color: #00f3ff;
+    border: 2px solid #00f3ff;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    line-height: 65px;
+    margin: 20px auto;
+}
+
+@media (max-width: 400px) {
+    body {
+        padding: 0;
+    }
+    .caixa-principal {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        border: none;
+    }
+}

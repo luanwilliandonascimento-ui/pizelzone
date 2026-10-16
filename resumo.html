@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelZone - Resumo do Pedido</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="caixa-principal">
+        <img src="./img/logo.png" alt="PixelZone Logo" class="logo">
+        <h2 class="subtitulo">RESUMO DO PEDIDO</h2>
+
+        <div class="secao-resumo">
+            <p><strong>O QUE VOCÊ COMPROU:</strong></p>
+            <div class="item-carrinho">
+                <img id="foto-item" src="./img/logo.png" alt="Produto" class="foto-produto-resumo">
+                <div>
+                    <p id="nome-item">Nenhum produto selecionado</p>
+                    <p id="preco-item" class="preco">R$ 0,00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="secao-resumo">
+            <p><strong>FORMA DE ENTREGA:</strong></p>
+            <p>Entrega Expressa (3 a 5 dias úteis)</p>
+        </div>
+
+        <div class="secao-resumo">
+            <p><strong>FORMA DE PAGAMENTO:</strong></p>
+            <p>Cartão de Crédito</p>
+        </div>
+
+        <div class="linha-valor">
+            <span>Subtotal:</span>
+            <span id="subtotal-item">R$ 0,00</span>
+        </div>
+        <div class="linha-valor">
+            <span>Frete:</span>
+            <span>R$ 20,00</span>
+        </div>
+        <div class="linha-valor total">
+            <span>TOTAL:</span>
+            <span id="total-item">R$ 0,00</span>
+        </div>
+
+        <a href="sucessocompra.html" id="botao-finalizar" class="botao" style="margin-bottom: 15px; background-color: #28a745;">COMPRAR</a>
+        <a href="index.html" class="botao">VOLTAR AO INÍCIO</a>
+    </div>
+    <script src="resumo.js"></script>
+</body>
+</html>
